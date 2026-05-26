@@ -1,6 +1,11 @@
 import * as dotenv from "dotenv";
+import fs from "fs";
 
-dotenv.config({ path: ".env.local" });
+if (fs.existsSync(".env.local")) {
+  dotenv.config({ path: ".env.local" });
+} else {
+  dotenv.config({ path: ".env" });
+}
 
 import { prisma } from "../src/lib/db";
 
