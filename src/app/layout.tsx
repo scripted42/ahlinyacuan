@@ -23,11 +23,20 @@ export const metadata: Metadata = {
     url: "https://ahlinyacuan.pro",
     siteName: "AhlinyaCuan",
     type: "website",
+    images: [
+      {
+        url: "https://ahlinyacuan.pro/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "AhlinyaCuan n8n YouTube Automation",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "n8n Youtube Automation — AhlinyaCuan",
     description: "Otomasi channel YouTube kamu 100% autopilot dengan n8n",
+    images: ["https://ahlinyacuan.pro/og-image.png"],
   },
   robots: {
     index: true,
