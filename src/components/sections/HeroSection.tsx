@@ -130,31 +130,24 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right Column: Visual Mockup */}
+          {/* Right Column: Owner Face Visual */}
           <div
             className={`lg:col-span-5 relative flex justify-center transition-all duration-1000 delay-300 ${
               isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
             }`}
           >
             {/* Ambient gold glow */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-amber-400/10 to-yellow-300/15 rounded-[2.5rem] blur-2xl transform rotate-3" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-amber-400/20 to-yellow-300/25 rounded-full blur-3xl transform rotate-3 pointer-events-none" />
             
-            {/* Mockup frame */}
-            <div className="relative bg-slate-950 border-4 border-slate-800 rounded-[2.5rem] p-3 shadow-2xl shadow-slate-900/40 w-full max-w-sm sm:max-w-md overflow-hidden aspect-[4/3] animate-float">
-              <div className="absolute top-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-20">
-                <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
-              </div>
-              <div className="relative w-full h-full rounded-[1.8rem] overflow-hidden bg-slate-900">
-                <Image
-                  src="/mockup.png"
-                  alt="YouTube Automation n8n Workflow"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
+            {/* Circular Owner Face Frame */}
+            <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-full overflow-hidden border-8 border-white shadow-2xl shadow-slate-200/80 animate-float bg-gradient-to-tr from-yellow-300 to-amber-400">
+              <Image
+                src="/owner-face.png"
+                alt="Owner AhlinyaCuan"
+                fill
+                className="object-cover scale-105"
+                priority
+              />
             </div>
           </div>
           
