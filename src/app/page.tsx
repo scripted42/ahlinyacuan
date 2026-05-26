@@ -88,6 +88,10 @@ export default async function Home() {
     }
   ];
 
+  // Calculate cheapest price
+  const prices = displayProducts.map((p) => p.price);
+  const cheapestPrice = prices.length > 0 ? Math.min(...prices) : 149000;
+
   return (
     <main>
       <Navbar />
@@ -97,7 +101,7 @@ export default async function Home() {
       <SolutionSection />
       <ProgramTabs />
       <TestimonialSection />
-      <WhatYouGetSection />
+      <WhatYouGetSection cheapestPrice={cheapestPrice} />
       <PricingSection products={displayProducts} />
       <FaqSection />
       <FooterSection />
@@ -109,7 +113,7 @@ export default async function Home() {
           id="sticky-cta"
           className="block w-full bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-slate-950 font-bold text-center py-4 rounded-xl shadow-lg shadow-amber-500/25"
         >
-          ⚡ Beli Sekarang
+          ⚡ Beli Sekarang — Mulai Rp {cheapestPrice.toLocaleString("id-ID")}
         </a>
       </div>
     </main>
