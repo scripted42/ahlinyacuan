@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+
+model Product {
+  id          Int      @id @default(autoincrement())
+  name        String   @db.VarChar(255)
+  description String?  @db.Text
+  price       Decimal  @db.Decimal(10, 2)
+  filePath    String   @db.VarChar(500)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  orders      Order[]
+
+  @@map("products")
+}
+
+model Order {
+  id              Int       @id @default(autoincrement())
+  orderId         String    @unique @db.VarChar(50)
+  productId       Int
+  customerName    String    @db.VarChar(255)
+  customerEmail   String    @db.VarChar(255)
+  customerPhone   String    @db.VarChar(20)
+  amount          Decimal   @db.Decimal(10, 2)
+  status          OrderStatus @default(PENDING)
+  midtransTxnId   String?   @db.VarChar(100)
+  snapToken       String?   @db.VarChar(255)
+  downloadToken   String?   @unique @db.VarChar(100)
+  downloadExpiry  DateTime?
+  downloadCount   Int       @default(0)
+  maxDownloads    Int       @default(3)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  product         Product   @relation(fields: [productId], references: [id])
+
+  @@map("orders")
+}
+
+enum OrderStatus {
+  PENDING
+  PAID
+  FAILED
+  EXPIRED
+}
