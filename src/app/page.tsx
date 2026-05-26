@@ -10,6 +10,8 @@ import FaqSection from "@/components/sections/FaqSection";
 import FooterSection from "@/components/sections/FooterSection";
 import { prisma } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 // Floating navbar
 function Navbar() {
   return (
