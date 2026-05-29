@@ -39,9 +39,15 @@ const items = [
   },
 ];
 
-export default function WhatYouGetSection() {
+interface WhatYouGetSectionProps {
+  cheapestPrice?: number;
+}
+
+export default function WhatYouGetSection({ cheapestPrice }: WhatYouGetSectionProps) {
   const totalValue = "Rp 524.000";
-  const salePrice = "Rp 149.000";
+  const salePrice = cheapestPrice
+    ? `Mulai Rp ${cheapestPrice.toLocaleString("id-ID")}`
+    : "Rp 149.000";
 
   return (
     <section id="what-you-get" className="py-24 bg-slate-50 border-y border-slate-100">

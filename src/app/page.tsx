@@ -2,12 +2,15 @@ import HeroSection from "@/components/sections/HeroSection";
 import PartnersSection from "@/components/sections/PartnersSection";
 import PainPointSection from "@/components/sections/PainPointSection";
 import SolutionSection from "@/components/sections/SolutionSection";
-import ProgramTabs from "@/components/sections/ProgramTabs";
 import TestimonialSection from "@/components/sections/TestimonialSection";
+import FounderSection from "@/components/sections/FounderSection";
 import WhatYouGetSection from "@/components/sections/WhatYouGetSection";
 import PricingSection from "@/components/sections/PricingSection";
 import FaqSection from "@/components/sections/FaqSection";
 import FooterSection from "@/components/sections/FooterSection";
+import { prisma } from "@/lib/db";
+
+export const dynamic = "force-dynamic";
 
 // Floating navbar
 function Navbar() {
@@ -22,7 +25,7 @@ function Navbar() {
       <div className="hidden sm:flex items-center gap-8">
         {[
           { label: "Fitur", href: "#solution" },
-          { label: "Metode", href: "#study-methods" },
+          { label: "Founder", href: "#founder" },
           { label: "Testimoni", href: "#testimonials" },
           { label: "FAQ", href: "#faq" },
         ].map((link) => (
@@ -46,7 +49,49 @@ function Navbar() {
   );
 }
 
-export default function Home() {
+export default async function Home() {
+  // Fetch active products from DB
+  const productsFromDb = await prisma.product.findMany({
+    where: { isActive: true },
+    orderBy: { id: "asc" },
+  });
+
+  // Serialize Decimal objects to numbers for safe Next.js hydration props
+  const serializedProducts = productsFromDb.map((p) => ({
+    id: p.id,
+    name: p.name,
+    description: p.description || "",
+    price: Number(p.price),
+    normalPrice: Number(p.normalPrice),
+    features: (() => {
+      try {
+        return JSON.parse(p.features || "[]");
+      } catch {
+        return [];
+      }
+    })(),
+    badge: p.badge,
+    popular: p.popular,
+  }));
+
+  // Default fallback if database is not seeded yet
+  const displayProducts = serializedProducts.length > 0 ? serializedProducts : [
+    {
+      id: 1,
+      name: "n8n YouTube Automation",
+      description: "Workflow otomatis lengkap untuk riset konten, scheduling, dan upload YouTube otomatis.",
+      price: 149000,
+      normalPrice: 299000,
+      features: ["Template n8n YouTube Lengkap", "Dokumentasi PDF", "Video Tutorial", "Update Gratis"],
+      badge: "TERPOPULER",
+      popular: false
+    }
+  ];
+
+  // Calculate cheapest price
+  const prices = displayProducts.map((p) => p.price);
+  const cheapestPrice = prices.length > 0 ? Math.min(...prices) : 149000;
+
   return (
     <main>
       <Navbar />
@@ -54,10 +99,10 @@ export default function Home() {
       <PartnersSection />
       <PainPointSection />
       <SolutionSection />
-      <ProgramTabs />
       <TestimonialSection />
-      <WhatYouGetSection />
-      <PricingSection />
+      <FounderSection />
+      <WhatYouGetSection cheapestPrice={cheapestPrice} />
+      <PricingSection products={displayProducts} />
       <FaqSection />
       <FooterSection />
 
@@ -68,7 +113,7 @@ export default function Home() {
           id="sticky-cta"
           className="block w-full bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-slate-950 font-bold text-center py-4 rounded-xl shadow-lg shadow-amber-500/25"
         >
-          ⚡ Beli Sekarang — Rp 149.000
+          ⚡ Beli Sekarang — Mulai Rp {cheapestPrice.toLocaleString("id-ID")}
         </a>
       </div>
     </main>

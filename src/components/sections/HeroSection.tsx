@@ -35,19 +35,32 @@ export default function HeroSection() {
           
           {/* Left Column: Copy & Actions */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            {/* Badge */}
+            
+            {/* Stars Review & Trust Badge */}
             <div
-              className={`inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-5 py-2 mb-2 shadow-sm transition-all duration-700 ${
+              className={`flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-3 transition-all duration-700 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              <span className="flex h-3 w-3 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
-              </span>
-              <span className="text-slate-600 text-sm font-semibold tracking-wide">
-                Mencetak 500+ Automation Creators
-              </span>
+              {/* Star reviews */}
+              <div className="inline-flex items-center gap-1.5 bg-white border border-slate-200 rounded-full px-4 py-2 shadow-sm">
+                <div className="flex items-center text-amber-500 text-sm">
+                  ★ ★ ★ ★ ★
+                </div>
+                <span className="text-slate-900 text-xs font-bold">4.9/5</span>
+                <span className="text-slate-500 text-[10px] font-semibold">(500+ Alumni)</span>
+              </div>
+              
+              {/* Trust Badge */}
+              <div className="inline-flex items-center gap-2 bg-slate-900 text-white rounded-full px-4 py-2 shadow-md">
+                <span className="flex h-2 w-2 relative">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
+                </span>
+                <span className="text-[10px] font-black tracking-wide uppercase text-yellow-400">
+                  🇮🇩 YouTube Automation #1 di Indonesia
+                </span>
+              </div>
             </div>
 
             {/* Headline */}
@@ -56,16 +69,16 @@ export default function HeroSection() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              Otomasi Channel YouTube <br className="hidden sm:block" />
+              Kuasai YouTube Automation <br className="hidden sm:block" />
               <span className="relative inline-block mt-1">
                 <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-500">
-                  100% Autopilot
+                  & Faceless Channel
                 </span>
                 <svg className="absolute -bottom-2 w-full h-3 -z-10 text-amber-200/60" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="transparent" strokeLinecap="round" />
                 </svg>
               </span>{" "}
-              dengan n8n
+              100% Autopilot
             </h1>
 
             {/* Subheadline */}
@@ -74,11 +87,7 @@ export default function HeroSection() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              Impor template workflow n8n siap pakai untuk otomatisasi{" "}
-              <span className="font-semibold text-slate-900">riset konten</span>,{" "}
-              <span className="font-semibold text-slate-900">upload otomatis</span>, dan{" "}
-              <span className="font-semibold text-slate-900">scheduling</span> —
-              kembangkan bisnis media Anda tanpa pusing coding.
+              Bangun pabrik konten penghasil Dolar tanpa perlu tampil wajah atau rekam suara. Gunakan workflow n8n siap pakai untuk otomatisasi riset ide, penulisan skrip AI, editing, hingga upload otomatis 24/7.
             </p>
 
             {/* CTA Buttons */}
@@ -94,14 +103,14 @@ export default function HeroSection() {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <span className="relative z-10 flex items-center gap-2 group-hover:text-slate-950 transition-colors">
-                  ⚡ Dapatkan Sekarang 
+                  ⚡ Mulai Bangun Channel Anda
                 </span>
               </a>
               <a
-                href="#study-methods"
+                href="#founder"
                 className="inline-flex items-center justify-center gap-2 bg-white text-slate-700 border border-slate-200 hover:border-amber-300 font-semibold text-base sm:text-lg px-8 py-4 rounded-2xl transition-all hover:bg-slate-50 hover:text-amber-600 shadow-sm w-full sm:w-auto"
               >
-                Lihat Metode Setup 👀
+                Kenalan dengan Founder 💬
               </a>
             </div>
             
@@ -130,28 +139,35 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right Column: Visual Mockup */}
+          {/* Right Column: 3D Browser Mockup */}
           <div
             className={`lg:col-span-5 relative flex justify-center transition-all duration-1000 delay-300 ${
               isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
             }`}
           >
             {/* Ambient gold glow */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-amber-400/10 to-yellow-300/15 rounded-[2.5rem] blur-2xl transform rotate-3" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-amber-400/10 to-yellow-300/10 rounded-full blur-3xl transform rotate-3 pointer-events-none" />
             
-            {/* Mockup frame */}
-            <div className="relative bg-slate-950 border-4 border-slate-800 rounded-[2.5rem] p-3 shadow-2xl shadow-slate-900/40 w-full max-w-sm sm:max-w-md overflow-hidden aspect-[4/3] animate-float">
-              <div className="absolute top-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-20">
-                <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
-                <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
+            {/* Browser Mockup Frame */}
+            <div className="relative w-full max-w-[450px] aspect-[4/3] rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-2xl shadow-slate-200 animate-float">
+              {/* Browser Header Bar */}
+              <div className="h-9 bg-slate-50 border-b border-slate-100 px-4 flex items-center justify-between">
+                <div className="flex gap-1.5">
+                  <div className="w-2.5 h-2.5 rounded-full bg-rose-400" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-amber-400" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
+                </div>
+                <div className="text-[10px] text-slate-400 font-mono tracking-wide">n8n_youtube_automation.json</div>
+                <div className="w-10" /> {/* Spacer */}
               </div>
-              <div className="relative w-full h-full rounded-[1.8rem] overflow-hidden bg-slate-900">
+              
+              {/* Workflow mockup image */}
+              <div className="relative w-full h-[calc(100%-36px)] bg-white p-1">
                 <Image
                   src="/mockup.png"
-                  alt="YouTube Automation n8n Workflow"
+                  alt="n8n YouTube Automation Workflow Mockup"
                   fill
-                  className="object-cover"
+                  className="object-cover opacity-95 hover:opacity-100 transition-opacity"
                   priority
                 />
               </div>

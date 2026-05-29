@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface PaymentFormProps {
   productId: number;
@@ -22,6 +22,23 @@ export default function PaymentForm({ productId }: PaymentFormProps) {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get("name") || params.get("customerName") || "";
+      const email = params.get("email") || params.get("customerEmail") || "";
+      const phone = params.get("phone") || params.get("customerPhone") || params.get("whatsapp") || params.get("tel") || "";
+
+      if (name || email || phone) {
+        setForm((prev) => ({
+          name: name || prev.name,
+          email: email || prev.email,
+          phone: phone || prev.phone,
+        }));
+      }
+    }
+  }, []);
 
   const validate = () => {
     const newErrors: Record<string, string> = {};
