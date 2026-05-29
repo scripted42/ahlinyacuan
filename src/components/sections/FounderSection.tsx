@@ -45,10 +45,10 @@ export default function FounderSection() {
               
               <div className="text-slate-600 text-sm sm:text-base leading-relaxed space-y-4">
                 <p>
-                  Halo, saya **Founder** dari **Ahlinya Cuan**. Saya merancang template otomatisasi n8n ini karena saya sangat paham betapa melelahkannya mengelola channel YouTube secara manual setiap hari—mulai dari riset tren konten, menulis skrip video, melakukan editing, hingga mengunggah video secara berkala di YouTube Studio.
+                  Halo, saya <span className="font-extrabold text-slate-900">Founder</span> dari <span className="font-extrabold text-slate-900">Ahlinya Cuan</span>. Saya merancang template otomatisasi n8n ini karena saya sangat paham betapa melelahkannya mengelola channel YouTube secara manual setiap hari—mulai dari riset tren konten, menulis skrip video, melakukan editing, hingga mengunggah video secara berkala di YouTube Studio.
                 </p>
                 <p>
-                  Melalui produk digital ini, tujuan saya adalah memberikan Anda **aset digital siap pakai**. Anda tidak perlu membayar jasa VA atau editor yang mahal, dan tidak perlu pusing melakukan coding. Cukup impor workflow yang sudah saya siapkan, ikuti panduan tutorialnya, dan biarkan AI & n8n bekerja di latar belakang secara autopilot.
+                  Melalui produk digital ini, tujuan saya adalah memberikan Anda <span className="font-extrabold text-slate-900">aset digital siap pakai</span>. Anda tidak perlu membayar jasa VA atau editor yang mahal, dan tidak perlu pusing melakukan coding. Cukup impor workflow yang sudah saya siapkan, ikuti panduan tutorialnya, dan biarkan AI & n8n bekerja di latar belakang secara autopilot.
                 </p>
               </div>
 
