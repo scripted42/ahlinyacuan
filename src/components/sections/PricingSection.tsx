@@ -33,7 +33,7 @@ export default function PricingSection({ products }: PricingSectionProps) {
   };
 
   return (
-    <section id="pricing" className="py-24 bg-slate-50 relative overflow-hidden">
+    <section id="pricing" className="py-14 bg-slate-50 relative overflow-hidden">
       {/* Decorative background blobs */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-amber-100/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-yellow-100/20 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/3 pointer-events-none" />

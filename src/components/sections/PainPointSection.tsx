@@ -54,7 +54,7 @@ export default function PainPointSection() {
   ];
 
   return (
-    <section id="pain-points" className="py-24 bg-white relative">
+    <section id="pain-points" className="py-14 bg-white relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="inline-flex items-center justify-center bg-amber-100 text-amber-800 text-sm font-bold px-4 py-2 rounded-full mb-6">

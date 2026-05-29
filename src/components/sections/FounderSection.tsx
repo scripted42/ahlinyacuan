@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function FounderSection() {
   return (
-    <section id="founder" className="py-20 bg-white relative overflow-hidden">
+    <section id="founder" className="py-14 bg-white relative overflow-hidden">
       {/* Subtle decorations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[20%] right-[-10%] w-[300px] h-[300px] bg-yellow-100/30 rounded-full blur-[80px]" />

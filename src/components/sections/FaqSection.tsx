@@ -29,7 +29,7 @@ const faqs = [
 
 export default function FaqSection() {
   return (
-    <section id="faq" className="py-24 bg-slate-50">
+    <section id="faq" className="py-14 bg-slate-50">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-flex items-center justify-center bg-amber-100 text-amber-800 text-sm font-bold px-4 py-2 rounded-full mb-6">

@@ -84,7 +84,7 @@ export default function WhatYouGetSection({ cheapestPrice }: WhatYouGetSectionPr
     : "Rp 149.000";
 
   return (
-    <section id="what-you-get" className="py-24 bg-slate-50 border-y border-slate-100">
+    <section id="what-you-get" className="py-14 bg-slate-50 border-y border-slate-100">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-flex items-center justify-center bg-amber-100 text-amber-800 text-sm font-bold px-4 py-2 rounded-full mb-6">
