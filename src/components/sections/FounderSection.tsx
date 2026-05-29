@@ -20,15 +20,15 @@ export default function FounderSection() {
               <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-8 border-white shadow-lg shadow-slate-200/80 bg-gradient-to-tr from-yellow-300 to-amber-400">
                 <Image
                   src="/owner-face.png"
-                  alt="Wahyu Kurniawan - Founder Ahlinya Cuan"
+                  alt="Founder Ahlinya Cuan"
                   fill
                   className="object-cover scale-105"
                 />
               </div>
               <div className="text-center mt-4">
-                <h4 className="text-slate-900 font-extrabold text-lg">Wahyu Kurniawan</h4>
+                <h4 className="text-slate-900 font-extrabold text-lg">Founder</h4>
                 <p className="text-amber-600 text-xs font-bold uppercase tracking-wider mt-0.5">
-                  Founder AhlinyaCuan
+                  AhlinyaCuan
                 </p>
               </div>
             </div>
@@ -45,7 +45,7 @@ export default function FounderSection() {
               
               <div className="text-slate-600 text-sm sm:text-base leading-relaxed space-y-4">
                 <p>
-                  Halo, saya **Wahyu Kurniawan**, founder dari **Ahlinya Cuan**. Saya merancang template otomatisasi n8n ini karena saya sangat paham betapa melelahkannya mengelola channel YouTube secara manual setiap hari—mulai dari riset tren konten, menulis skrip video, melakukan editing, hingga mengunggah video secara berkala di YouTube Studio.
+                  Halo, saya **Founder** dari **Ahlinya Cuan**. Saya merancang template otomatisasi n8n ini karena saya sangat paham betapa melelahkannya mengelola channel YouTube secara manual setiap hari—mulai dari riset tren konten, menulis skrip video, melakukan editing, hingga mengunggah video secara berkala di YouTube Studio.
                 </p>
                 <p>
                   Melalui produk digital ini, tujuan saya adalah memberikan Anda **aset digital siap pakai**. Anda tidak perlu membayar jasa VA atau editor yang mahal, dan tidak perlu pusing melakukan coding. Cukup impor workflow yang sudah saya siapkan, ikuti panduan tutorialnya, dan biarkan AI & n8n bekerja di latar belakang secara autopilot.
