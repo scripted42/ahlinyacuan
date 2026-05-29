@@ -2,37 +2,80 @@
 
 const benefits = [
   {
-    icon: "🤖",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7 animate-pulse">
+        <rect x="3" y="11" width="18" height="10" rx="2" />
+        <circle cx="12" cy="5" r="2" />
+        <path d="M12 7v4" />
+        <line x1="8" y1="16" x2="8.01" y2="16" />
+        <line x1="16" y1="16" x2="16.01" y2="16" />
+      </svg>
+    ),
     title: "100% Upload Otomatis",
     desc: "Workflow n8n otomatis mengunggah video ke YouTube sesuai jadwal posting yang ditentukan. Anda bisa fokus ke hal lain.",
     color: "from-amber-400 to-amber-600"
   },
   {
-    icon: "🔍",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        <path d="M12 7v1" />
+        <path d="M7 11h1" />
+        <path d="M12 15v1" />
+        <path d="M15 11h1" />
+      </svg>
+    ),
     title: "Riset Konten Cerdas",
     desc: "Menganalisis ide video trending, mencari kompetitor utama, dan menyusun ide konten secara otomatis menggunakan kecerdasan buatan.",
     color: "from-yellow-400 to-amber-500"
   },
   {
-    icon: "📅",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+        <line x1="16" y1="2" x2="16" y2="6" />
+        <line x1="8" y1="2" x2="8" y2="6" />
+        <line x1="3" y1="10" x2="21" y2="10" />
+        <path d="m9 16 2 2 4-4" />
+      </svg>
+    ),
     title: "Jadwal Posting Instan",
     desc: "Atur posting video untuk satu bulan penuh hanya dalam waktu 30 menit. Sistem kami berjalan di cloud nonstop.",
     color: "from-orange-400 to-amber-500"
   },
   {
-    icon: "📊",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
+        <line x1="18" y1="20" x2="18" y2="10" />
+        <line x1="12" y1="20" x2="12" y2="4" />
+        <line x1="6" y1="20" x2="6" y2="14" />
+      </svg>
+    ),
     title: "Laporan Performa Berkala",
-    desc: "Menerima laporan metrik dan perkembangan performa channel Anda secara terjadwal langsung ke WhatsApp atau email.",
+    desc: "Menerima laporan metrik dan perkembangan performa channel Anda secara terjadwal langsung to WhatsApp atau email.",
     color: "from-yellow-500 to-orange-500"
   },
   {
-    icon: "🎯",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
+        <circle cx="12" cy="12" r="10" />
+        <circle cx="12" cy="12" r="6" />
+        <circle cx="12" cy="12" r="2" />
+      </svg>
+    ),
     title: "Optimasi SEO Otomatis",
     desc: "Secara otomatis memproduksi judul video dengan CTR tinggi, meta deskripsi lengkap, serta kata kunci (tags) relevan.",
     color: "from-amber-500 to-orange-600"
   },
   {
-    icon: "💰",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
+        <circle cx="12" cy="12" r="10" />
+        <line x1="12" y1="8" x2="12" y2="16" />
+        <path d="M16 8H12a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H10" />
+      </svg>
+    ),
     title: "Hemat Ratusan Juta Rupiah",
     desc: "Tidak perlu merekrut video editor atau virtual assistant yang mahal. Bayar sekali untuk otomasi tak terbatas seumur hidup.",
     color: "from-amber-400 to-orange-500"

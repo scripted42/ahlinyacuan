@@ -3,25 +3,50 @@
 export default function PainPointSection() {
   const pains = [
     {
-      icon: "😩",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="17 8 12 3 7 8" />
+          <line x1="12" y1="3" x2="12" y2="15" />
+        </svg>
+      ),
       title: "Upload Manual Tiap Hari",
       desc: "Buka YouTube Studio, isi judul, deskripsi, thumbnail, tag — setiap hari. Sangat menyita waktu.",
       color: "bg-rose-50 text-rose-600 border-rose-100",
     },
     {
-      icon: "🕐",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          <circle cx="11" cy="11" r="3" />
+          <path d="M11 8v3l2 1" />
+        </svg>
+      ),
       title: "Riset Konten Lambat",
       desc: "Cari ide video, cek trending, dan analisis kompetitor semuanya dilakukan manual. Bikin males mulai.",
       color: "bg-amber-50 text-amber-600 border-amber-100",
     },
     {
-      icon: "📉",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+          <polyline points="23 18 13.5 8.5 8.5 13.5 1 6" />
+          <polyline points="17 18 23 18 23 12" />
+        </svg>
+      ),
       title: "Channel Susah Berkembang",
       desc: "Karena sering skip upload akibat capek, algoritma YouTube jadi tidak merekomendasikan video kamu.",
       color: "bg-blue-50 text-blue-600 border-blue-100",
     },
     {
-      icon: "💸",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8">
+          <line x1="12" y1="1" x2="12" y2="23" />
+          <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+          <path d="m19 19-4 4-4-4" />
+          <path d="M15 23H9" />
+        </svg>
+      ),
       title: "Hire Editor / VA Mahal",
       desc: "Mau delegasi tapi biaya bayar admin atau VA terlalu besar. Margin dari adsense habis buat operasional.",
       color: "bg-emerald-50 text-emerald-600 border-emerald-100",
