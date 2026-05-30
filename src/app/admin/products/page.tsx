@@ -19,6 +19,7 @@ export default async function AdminProductsPage() {
     badge: p.badge,
     popular: p.popular,
     filePath: p.filePath,
+    tutorialUrl: p.tutorialUrl,
     isActive: p.isActive,
   }));
 

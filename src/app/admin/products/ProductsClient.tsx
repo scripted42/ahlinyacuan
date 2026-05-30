@@ -14,6 +14,7 @@ interface Product {
   badge: string | null;
   popular: boolean;
   filePath: string;
+  tutorialUrl: string | null;
   isActive: boolean;
 }
 

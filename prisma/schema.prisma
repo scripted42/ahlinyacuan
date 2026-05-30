@@ -17,6 +17,7 @@ model Product {
   badge       String?  @db.VarChar(50)
   popular     Boolean  @default(false)
   filePath    String   @db.VarChar(500)
+  tutorialUrl String?  @db.VarChar(500)
   isActive    Boolean  @default(true)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt

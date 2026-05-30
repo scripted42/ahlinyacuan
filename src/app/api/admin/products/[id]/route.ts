@@ -48,7 +48,7 @@ export async function PUT(
     }
 
     const body = await request.json();
-    const { name, description, price, normalPrice, features, badge, popular, filePath, isActive } = body;
+    const { name, description, price, normalPrice, features, badge, popular, filePath, isActive, tutorialUrl } = body;
 
     if (!name || price === undefined || !filePath) {
       return NextResponse.json({ error: "Nama, Harga, dan File Path wajib diisi" }, { status: 400 });
@@ -66,6 +66,7 @@ export async function PUT(
         popular: Boolean(popular),
         filePath,
         isActive: isActive !== undefined ? Boolean(isActive) : true,
+        tutorialUrl: tutorialUrl || null,
       },
     });
 

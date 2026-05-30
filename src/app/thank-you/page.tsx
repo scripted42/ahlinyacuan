@@ -20,7 +20,7 @@ function ThankYouContent() {
           if (res.ok) {
             const data = await res.json();
             if (data.downloadToken) {
-              setDownloadUrl(`/api/download/${data.downloadToken}`);
+              setDownloadUrl(`/download/${data.downloadToken}`);
             }
           }
         } catch (error) {

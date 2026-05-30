@@ -12,6 +12,7 @@ interface ProductFormData {
   badge: string;
   popular: boolean;
   filePath: string;
+  tutorialUrl: string;
   isActive: boolean;
   featuresText: string;
 }
@@ -27,6 +28,7 @@ interface ProductFormProps {
     badge: string | null;
     popular: boolean;
     filePath: string;
+    tutorialUrl: string | null;
     isActive: boolean;
   };
 }
@@ -43,6 +45,7 @@ export default function ProductForm({ initialData }: ProductFormProps) {
     badge: initialData?.badge || "",
     popular: initialData?.popular || false,
     filePath: initialData?.filePath || "",
+    tutorialUrl: initialData?.tutorialUrl || "",
     isActive: initialData?.isActive !== undefined ? initialData.isActive : true,
     featuresText: initialData
       ? (() => {
@@ -82,6 +85,7 @@ export default function ProductForm({ initialData }: ProductFormProps) {
       badge: form.badge.trim() || null,
       popular: form.popular,
       filePath: form.filePath,
+      tutorialUrl: form.tutorialUrl.trim() || null,
       isActive: form.isActive,
       features: featuresArray,
     };
@@ -181,6 +185,21 @@ export default function ProductForm({ initialData }: ProductFormProps) {
           />
           <span className="text-[10px] text-slate-500 font-semibold mt-1.5 block">
             File harus diletakkan di VPS pada direktori `/private/files/`
+          </span>
+        </div>
+
+        {/* Tutorial URL */}
+        <div>
+          <label className="block text-slate-300 text-xs font-bold mb-2">🎬 Link Tutorial YouTube (Opsional)</label>
+          <input
+            type="text"
+            value={form.tutorialUrl}
+            onChange={(e) => setForm({ ...form, tutorialUrl: e.target.value })}
+            placeholder="Contoh: https://www.youtube.com/watch?v=z7jca7wYpgs"
+            className="w-full bg-slate-950/80 border border-slate-800 focus:border-amber-500 focus:ring-amber-500/10 text-white rounded-xl px-4 py-3.5 outline-none transition-all placeholder-slate-600 font-medium text-sm focus:ring-4"
+          />
+          <span className="text-[10px] text-slate-500 font-semibold mt-1.5 block">
+            Video tutorial akan ditampilkan di halaman download pembeli
           </span>
         </div>
 

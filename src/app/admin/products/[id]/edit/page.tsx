@@ -32,6 +32,7 @@ export default async function EditProductPage({ params }: EditProductPageProps) 
     badge: product.badge,
     popular: product.popular,
     filePath: product.filePath,
+    tutorialUrl: product.tutorialUrl,
     isActive: product.isActive,
   };
 

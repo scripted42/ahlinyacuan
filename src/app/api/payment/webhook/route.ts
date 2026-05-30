@@ -70,7 +70,7 @@ export async function POST(request: Request) {
       });
 
       // Send download email
-      const downloadUrl = `${process.env.NEXT_PUBLIC_APP_URL}/api/download/${downloadToken}`;
+      const downloadUrl = `${process.env.NEXT_PUBLIC_APP_URL}/download/${downloadToken}`;
       try {
         await sendDownloadEmail({
           to: order.customerEmail,

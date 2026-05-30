@@ -30,6 +30,7 @@ async function main() {
       badge: "TERPOPULER",
       popular: false,
       filePath: "n8n-youtube-automation.zip",
+      tutorialUrl: "https://www.youtube.com/watch?v=z7jca7wYpgs",
     },
     create: {
       id: 1,
@@ -47,6 +48,7 @@ async function main() {
       badge: "TERPOPULER",
       popular: false,
       filePath: "n8n-youtube-automation.zip",
+      tutorialUrl: "https://www.youtube.com/watch?v=z7jca7wYpgs",
       isActive: true,
     },
   });
@@ -70,6 +72,7 @@ async function main() {
       badge: null,
       popular: false,
       filePath: "n8n-tiktok-automation.zip",
+      tutorialUrl: "https://www.youtube.com/watch?v=z7jca7wYpgs",
     },
     create: {
       id: 2,
@@ -87,6 +90,7 @@ async function main() {
       badge: null,
       popular: false,
       filePath: "n8n-tiktok-automation.zip",
+      tutorialUrl: "https://www.youtube.com/watch?v=z7jca7wYpgs",
       isActive: true,
     },
   });
@@ -110,6 +114,7 @@ async function main() {
       badge: "PALING HEMAT",
       popular: true,
       filePath: "n8n-full-bundle-automation.zip",
+      tutorialUrl: "https://www.youtube.com/watch?v=z7jca7wYpgs",
     },
     create: {
       id: 3,
@@ -127,6 +132,7 @@ async function main() {
       badge: "PALING HEMAT",
       popular: true,
       filePath: "n8n-full-bundle-automation.zip",
+      tutorialUrl: "https://www.youtube.com/watch?v=z7jca7wYpgs",
       isActive: true,
     },
   });

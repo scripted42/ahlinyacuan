@@ -48,6 +48,9 @@ export async function sendDownloadEmail({
           .body { padding: 40px; }
           .body p { color: #ccc; line-height: 1.6; }
           .btn { display: inline-block; background: linear-gradient(135deg, #f97316, #eab308); color: #fff; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; margin: 20px 0; }
+          .features { background: #2a2a2a; border-radius: 8px; padding: 16px; margin-top: 20px; }
+          .features p { color: #ddd; font-size: 14px; margin: 8px 0; }
+          .features .icon { margin-right: 8px; }
           .note { background: #2a2a2a; border-radius: 8px; padding: 16px; margin-top: 20px; }
           .note p { color: #999; font-size: 14px; margin: 0; }
           .footer { text-align: center; padding: 20px; color: #555; font-size: 12px; }
@@ -61,10 +64,15 @@ export async function sendDownloadEmail({
           <div class="body">
             <p>Halo <strong>${customerName}</strong>,</p>
             <p>Terima kasih telah membeli <strong>${productName}</strong>. Pembayaran kamu telah berhasil diproses.</p>
-            <p>Klik tombol di bawah untuk mendownload produk kamu:</p>
-            <a href="${downloadUrl}" class="btn">⬇️ Download Sekarang</a>
+            <p>Klik tombol di bawah untuk mengakses halaman download dan video tutorial:</p>
+            <a href="${downloadUrl}" class="btn">📦 Akses Download & Tutorial</a>
+            <div class="features">
+              <p><span class="icon">⬇️</span> <strong>Download File</strong> — Unduh workflow n8n langsung dari halaman</p>
+              <p><span class="icon">🎬</span> <strong>Video Tutorial</strong> — Panduan setup langkah-demi-langkah</p>
+              <p><span class="icon">📋</span> <strong>Langkah Selanjutnya</strong> — Instruksi lengkap untuk memulai</p>
+            </div>
             <div class="note">
-              <p>⚠️ <strong>Penting:</strong> Link download ini aktif hingga <strong>${expiryStr}</strong> dan maksimal <strong>3x download</strong>. Simpan file setelah didownload.</p>
+              <p>⚠️ <strong>Penting:</strong> Link ini aktif hingga <strong>${expiryStr}</strong> dan maksimal <strong>3x download</strong>. Simpan file setelah didownload.</p>
             </div>
             <p>Butuh bantuan? Hubungi kami di WhatsApp: <a href="https://wa.me/62xxxxxxxxxxxx" style="color: #f97316;">wa.me/62xxxxxxxxxxxx</a></p>
           </div>

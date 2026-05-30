@@ -24,7 +24,7 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, description, price, normalPrice, features, badge, popular, filePath, isActive } = body;
+    const { name, description, price, normalPrice, features, badge, popular, filePath, tutorialUrl, isActive } = body;
 
     if (!name || price === undefined || !filePath) {
       return NextResponse.json({ error: "Nama, Harga, dan File Path wajib diisi" }, { status: 400 });
@@ -40,6 +40,7 @@ export async function POST(request: Request) {
         badge: badge || null,
         popular: Boolean(popular),
         filePath,
+        tutorialUrl: tutorialUrl || null,
         isActive: isActive !== undefined ? Boolean(isActive) : true,
       },
     });
