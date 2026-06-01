@@ -15,17 +15,6 @@ const items = [
   {
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 text-amber-600">
-        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-        <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5v-15z" />
-      </svg>
-    ),
-    title: "Dokumentasi Step-by-Step",
-    desc: "Panduan PDF 50+ halaman bergambar dari install n8n hingga workflow berjalan.",
-    value: "Rp 49.000",
-  },
-  {
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 text-amber-600">
         <polygon points="23 7 16 12 23 17 23 7" />
         <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
       </svg>
@@ -44,33 +33,6 @@ const items = [
     desc: "Jika YouTube merubah API, kami akan update workflow-nya dan kamu dapatkan secara gratis.",
     value: "Rp 99.000",
   },
-  {
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 text-amber-600">
-        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-        <circle cx="9" cy="7" r="4" />
-        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-      </svg>
-    ),
-    title: "Grup Komunitas Eksklusif",
-    desc: "Join circle WhatsApp 500+ YouTuber. Tempat saling share trik, insight, dan diskusi.",
-    value: "Rp 49.000",
-  },
-  {
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 text-amber-600">
-        <polyline points="20 12 20 22 4 22 4 12" />
-        <rect x="2" y="7" width="20" height="5" />
-        <line x1="12" y1="22" x2="12" y2="7" />
-        <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
-        <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
-      </svg>
-    ),
-    title: "Template Prompt AI YouTube",
-    desc: "50+ prompt rahasia untuk generate judul CTR tinggi, deskripsi, dan script via ChatGPT.",
-    value: "Rp 49.000",
-  },
 ];
 
 interface WhatYouGetSectionProps {
@@ -78,7 +40,7 @@ interface WhatYouGetSectionProps {
 }
 
 export default function WhatYouGetSection({ cheapestPrice }: WhatYouGetSectionProps) {
-  const totalValue = "Rp 524.000";
+  const totalValue = "Rp 377.000";
   const salePrice = cheapestPrice
     ? `Mulai Rp ${cheapestPrice.toLocaleString("id-ID")}`
     : "Rp 149.000";
