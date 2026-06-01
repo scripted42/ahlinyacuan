@@ -74,7 +74,6 @@ export async function sendDownloadEmail({
             <div class="note">
               <p>⚠️ <strong>Penting:</strong> Link ini aktif hingga <strong>${expiryStr}</strong> dan maksimal <strong>3x download</strong>. Simpan file setelah didownload.</p>
             </div>
-            <p>Butuh bantuan? Hubungi kami di WhatsApp: <a href="https://wa.me/62xxxxxxxxxxxx" style="color: #f97316;">wa.me/62xxxxxxxxxxxx</a></p>
           </div>
           <div class="footer">
             <p>© 2024 AhlinyaCuan.pro — n8n Youtube Automation</p>
