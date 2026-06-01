@@ -43,7 +43,7 @@ export default function TermsPage() {
 
             <h2 className="text-xl font-bold text-slate-900 mt-8 mb-3">2. DESKRIPSI PRODUK & LAYANAN</h2>
             <p>
-              Kami menyediakan produk digital berupa template workflow n8n (n8n Youtube Automation), dokumen panduan format PDF, serta video tutorial pendukung. Seluruh harga produk dicantumkan secara jelas menggunakan mata uang resmi <strong>Rupiah (IDR)</strong>. Kami berhak melakukan perubahan harga atau menarik produk kapan pun tanpa pemberitahuan sebelumnya.
+              Kami menyediakan produk digital berupa template workflow n8n (n8n Youtube Automation) serta video tutorial pendukung. Seluruh harga produk dicantumkan secara jelas menggunakan mata uang resmi <strong>Rupiah (IDR)</strong>. Kami berhak melakukan perubahan harga atau menarik produk kapan pun tanpa pemberitahuan sebelumnya.
             </p>
 
             <h2 className="text-xl font-bold text-slate-900 mt-8 mb-3">3. LISENSI PENGGUNAAN (GRANT OF LICENSE)</h2>

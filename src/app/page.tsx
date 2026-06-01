@@ -82,7 +82,7 @@ export default async function Home() {
       description: "Workflow otomatis lengkap untuk riset konten, scheduling, dan upload YouTube otomatis.",
       price: 149000,
       normalPrice: 299000,
-      features: ["Template n8n YouTube Lengkap", "Dokumentasi PDF", "Video Tutorial", "Update Gratis"],
+      features: ["Template n8n YouTube Lengkap", "Video Tutorial", "Update Gratis"],
       badge: "TERPOPULER",
       popular: false
     }

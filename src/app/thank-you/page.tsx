@@ -106,7 +106,7 @@ function ThankYouContent() {
           <ol className="space-y-4">
             {[
               "Download file workflow n8n",
-              "Install n8n (cek PDF panduan)",
+              "Install n8n di desktop/VPS Anda",
               "Import workflow ke n8n",
               "Ikuti tutorial video untuk integrasi",
               "Join grup WhatsApp untuk support",

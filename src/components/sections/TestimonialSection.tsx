@@ -15,7 +15,7 @@ const testimonials = [
     handle: "@dewibeauty",
     avatar: "DA",
     rating: 5,
-    text: "Awalnya skeptis karena gue gak ngerti n8n sama sekali. Tapi dokumentasinya super lengkap dan support-nya fast response. Worth it banget!",
+    text: "Awalnya skeptis karena gue gak ngerti n8n sama sekali. Tapi video tutorialnya sangat lengkap dan support-nya fast response. Worth it banget!",
     niche: "Niche: Beauty & Life 💄",
     achievement: "128K Subs (100% Autopilot)",
   },
@@ -51,9 +51,9 @@ const testimonials = [
     handle: "@rinivlog",
     avatar: "RW",
     rating: 5,
-    text: "Update-nya selalu free dan tim support-nya responsif banget. Kalau ada workflow baru langsung dikasih. Komunitas-nya juga super aktif.",
+    text: "Update-nya selalu free dan tim support-nya responsif banget. Kalau ada workflow baru langsung dikasih. Solusi terbaik untuk konten kreator.",
     niche: "Niche: Daily Travel Vlog ✈️",
-    achievement: "Eksklusif Group Circle Member",
+    achievement: "Lifetime Update Member",
   },
 ];
 

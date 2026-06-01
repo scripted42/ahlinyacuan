@@ -3,7 +3,7 @@
 const faqs = [
   {
     q: "Apakah saya perlu punya pengalaman coding?",
-    a: "Tidak sama sekali! Template ini dirancang khusus untuk pemula. Kamu hanya perlu ikuti dokumentasi step-by-step. Jika stuck, tim support WA siap bantu.",
+    a: "Tidak sama sekali! Template ini dirancang khusus untuk pemula. Kamu hanya perlu ikuti video tutorial step-by-step. Jika stuck, tim support WA siap bantu.",
   },
   {
     q: "Apa itu n8n? Harus langganan bulanan?",
@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "Kalau YouTube ubah aturan / API?",
-    a: "Tenang, kamu dapat update workflow seumur hidup secara gratis! Update akan diinfokan via grup WhatsApp eksklusif.",
+    a: "Tenang, kamu dapat update workflow seumur hidup secara gratis! Update akan diinfokan secara berkala via WhatsApp / Email.",
   },
   {
     q: "Bisa untuk berapa akun YouTube?",

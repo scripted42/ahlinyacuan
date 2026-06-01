@@ -22,7 +22,6 @@ async function main() {
       normalPrice: 299000,
       features: JSON.stringify([
         "Template n8n YouTube Lengkap",
-        "Dokumentasi PDF Panduan",
         "Video Tutorial Integrasi",
         "Update Gratis Selamanya",
         "Grup Support WhatsApp"
@@ -40,7 +39,6 @@ async function main() {
       normalPrice: 299000,
       features: JSON.stringify([
         "Template n8n YouTube Lengkap",
-        "Dokumentasi PDF Panduan",
         "Video Tutorial Integrasi",
         "Update Gratis Selamanya",
         "Grup Support WhatsApp"
@@ -64,7 +62,6 @@ async function main() {
       normalPrice: 399000,
       features: JSON.stringify([
         "Template n8n TikTok Lengkap",
-        "Dokumentasi PDF Panduan",
         "Video Tutorial Integrasi",
         "Update Gratis Selamanya",
         "Grup Support WhatsApp"
@@ -82,7 +79,6 @@ async function main() {
       normalPrice: 399000,
       features: JSON.stringify([
         "Template n8n TikTok Lengkap",
-        "Dokumentasi PDF Panduan",
         "Video Tutorial Integrasi",
         "Update Gratis Selamanya",
         "Grup Support WhatsApp"
