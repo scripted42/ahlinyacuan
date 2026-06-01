@@ -60,7 +60,13 @@ export default function PricingSection({ products }: PricingSectionProps) {
         </div>
 
         {/* Product Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className={`grid grid-cols-1 ${
+          products.length === 1 
+            ? "max-w-md mx-auto" 
+            : products.length === 2 
+            ? "md:grid-cols-2 max-w-3xl mx-auto" 
+            : "md:grid-cols-3"
+        } gap-8 mb-16`}>
           {products.map((product) => {
             const isSelected = selectedProduct.id === product.id;
             return (
